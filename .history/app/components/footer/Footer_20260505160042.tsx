@@ -22,14 +22,11 @@ export default function Footer() {
       </div>
 
       <div className="bg-[#53707F] px-6 py-4 md:px-10 lg:px-20 flex flex-col items-center gap-3 md:flex-row md:justify-between md:gap-0">
-        <a href="/termos" className="font-[Tenor_Sans] text-white text-[10px] hover:font-bold text-center">
-          Termos & Política de Privacidade
-        </a>
-        <p className="font-[Tenor_Sans] text-white text-[10px] text-center">
-          © Bertolini Da Rós 2026 - Todos os direitos reservados.
-        </p>
         <p className="font-[Tenor_Sans] text-white text-[10px] text-center">
           Desenvolvido por <a href="https://eduardamagnago.com/" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:font-bold no-underline">EM Studio.</a>
+        </p>
+        <p className="font-[Tenor_Sans] text-white text-[10px] text-center">
+          © Bertolini Da Rós 2026 - Todos os direitos reservados.
         </p>
         
       </div>

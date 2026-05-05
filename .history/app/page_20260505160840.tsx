@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <main className="bg-[#f8f8f8] min-h-screen overflow-x-hidden">
       <Header />
-      <section className="px-6 pt-8 md:px-12">
+      <section className="px-6 pt-80 md:px-12">
         <h1 className="font-[Lora] text-[32px] md:text-[50px] font-normal text-[#17445B] leading-tight max-w-[600px] mb-6 md:mb-8">
           Advocacia criminal com propósito e precisão
         </h1>
@@ -46,9 +46,9 @@ export default function Home() {
         </p>
 
         <Link href="/contato">
-          <button className="group flex items-center gap-3 md:gap-4 font-[Tenor_Sans] text-[16px] md:text-[20px] text-[#182443] bg-transparent border border-[#182443] rounded-[25px] px-6 md:px-8 py-3 cursor-pointer transition-all duration-300 hover:bg-[#53707F] hover:border-[#c9c8c8] hover:text-white">
+          <button className="flex items-center gap-3 md:gap-4 font-[Tenor_Sans] text-[16px] md:text-[20px] text-[#182443] bg-transparent border border-[#182443] rounded-[25px] px-6 md:px-8 py-3 cursor-pointer">
             Entre em contato
-            <Image src="/img/seta-botao.png" alt="ícone" width={32} height={32} className="transition-all duration-300 group-hover:invert" />
+            <Image src="/img/seta-botao.png" alt="ícone" width={32} height={32} />
           </button>
         </Link>
       </section>
@@ -88,7 +88,7 @@ export default function Home() {
           transition-all duration-700 ease-out
           ${atuacoes.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       >
-        <div className="flex justify-end mb-9 md:mb-4">
+        <div className="flex justify-end mb-6 md:mb-4">
           <Link href="/atuacoes">
             <button
               className="font-[Tenor_Sans] text-black text-[14px] md:text-[16px] tracking-widest hover:opacity-70 bg-transparent border-none cursor-pointer"

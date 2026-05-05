@@ -96,7 +96,7 @@ export default function Historia() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[900px] mx-auto">
-          <div className="bg-[#F3F3F3] rounded-[16px] overflow-hidden cursor-pointer transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+          <div className="bg-[#EBEBEB] rounded-[16px] overflow-hidden cursor-pointer transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
             <div className="bg-[#53707F] px-6 py-3 flex items-center justify-center gap-3">
               <Image src="/img/icone-justica.png" alt="Justiça" width={24} height={24} />
               <h3 className="font-[Tenor_Sans] text-white text-[18px]">Justiça</h3>

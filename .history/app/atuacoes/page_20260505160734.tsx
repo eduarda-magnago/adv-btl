@@ -73,7 +73,7 @@ function Accordion({ title, text }: { title: string; text: string }) {
         }}
         className="overflow-hidden"
       >
-        <div className="bg-[#F3F3F3] px-6 pt-5 pb-6">
+        <div className="bg-[#f0f0f0] px-6 pt-5 pb-6">
           <p className="font-[Tenor_Sans] text-[#1a1a1a] text-[13px] md:text-[14px] leading-relaxed text-justify">
             {text}
           </p>

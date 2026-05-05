@@ -101,7 +101,7 @@ export default function Header() {
 
           <nav className="flex flex-col items-center justify-center gap-10 h-[calc(100%-76px)]">
             {navLinks.map((item) => (
-              <a key={item.href} href={item.href} onClick={() => setMenuOpen(false)} className="font-[Tenor_Sans] text-[18px] text-black tracking-widest hover:text-[#1b1b1b] transition-colors">
+              <a key={item.href} href={item.href} onClick={() => setMenuOpen(false)} className="font-[Tenor_Sans] text-[18px] text-black tracking-widest hover:opacity-40 transition-opacity">
                 {item.label}
               </a>
             ))}

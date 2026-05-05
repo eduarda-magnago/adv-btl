@@ -26,10 +26,10 @@ export default function Footer() {
           Termos & Política de Privacidade
         </a>
         <p className="font-[Tenor_Sans] text-white text-[10px] text-center">
-          © Bertolini Da Rós 2026 - Todos os direitos reservados.
+          Desenvolvido por <a href="https://eduardamagnago.com/" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:font-bold no-underline">EM Studio.</a>
         </p>
         <p className="font-[Tenor_Sans] text-white text-[10px] text-center">
-          Desenvolvido por <a href="https://eduardamagnago.com/" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:font-bold no-underline">EM Studio.</a>
+          © Bertolini Da Rós 2026 - Todos os direitos reservados.
         </p>
         
       </div>
