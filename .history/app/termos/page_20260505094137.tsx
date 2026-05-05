@@ -1,0 +1,109 @@
+"use client";
+
+import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
+import Image from "next/image";
+import { useState, useEffect, useRef } from "react";
+
+function useReveal(threshold = 0.15) {
+  const ref = useRef<HTMLElement>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => setVisible(entry.isIntersecting),
+      { threshold }
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, [threshold]);
+
+  return { ref, visible };
+}
+
+export default function Termos() {
+  const banner   = useReveal();
+  const conteudo = useReveal();
+
+  return (
+    <main className="bg-[#f8f8f8] min-h-screen">
+      <Header />
+
+      {/* Hero — sem reveal */}
+      <section className="relative px-6 py-12 md:px-12 md:py-18 text-center overflow-hidden mb-6 md:mb-10">
+        <div className="absolute z-0 inset-0 flex items-center justify-center opacity-50 pointer-events-none">
+          <Image src="/img/logo-br.png" alt="" width={500} height={500} className="w-[280px] md:w-[500px] h-auto" />
+        </div>
+        <h1 className="font-[Lora] text-[32px] md:text-[48px] font-normal text-[#17445B] mb-4 md:mb-6">
+          Termos & Política de Privacidade
+        </h1>
+        <p className="font-[Lora] text-[14px] md:text-[18px] text-[#0A0A0A] max-w-[600px] mx-auto leading-relaxed mb-8 md:mb-10">
+          Transparência e responsabilidade no tratamento das suas informações. Leia com atenção os termos que regem o uso deste site.
+        </p>
+        <button>
+          <a href="#atuacoes" className="flex items-center relative z-10 gap-3 font-[Tenor_Sans] text-[14px] md:text-[16px] text-white bg-[#53707F] rounded-[20px] px-6 md:px-8 py-3 mx-auto cursor-pointer w-fit">
+            Alguma dúvida?
+            <Image src="/img/seta-branco.png" alt="ícone" width={24} height={24} />
+          </a>
+        </button>
+      </section>
+
+      {/* Banner */}
+      <section
+        ref={banner.ref as React.RefObject<HTMLElement>}
+        className={`bg-[#53707F] px-6 py-12 md:px-2 md:py-15 text-center
+          transition-all duration-700 ease-out
+          ${banner.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+      >
+        <h2 className="font-[Tenor_Sans] text-white text-[16px] md:text-[20px] tracking-widest mb-2">
+          TERMOS & POLÍTICA DE PRIVACIDADE
+        </h2>
+        <p className="font-[Tenor_Sans] text-white text-[12px] md:text-[14px]">
+          Última atualização: Maio de 2026.
+        </p>
+      </section>
+
+      <section
+        ref={conteudo.ref as React.RefObject<HTMLElement>}
+        className={`px-20 py-16 max-w-[900px] mx-auto
+          transition-all duration-700 ease-out
+          ${conteudo.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+      >
+        <h2 className="font-[Tenor_Sans] text-black text-[18px] tracking-widest mb-6">
+          TERMOS E CONDIÇÕES
+        </h2>
+        <p className="font-[Tenor_Sans] text-black text-[15px] mb-4">
+          Bertolini da Rós Advocacia — OAB/ES 41.885
+        </p>
+
+        <ol className="text-justify font-[Tenor_Sans] text-black text-[15px] leading-relaxed space-y-4 list-decimal list-inside">
+          <li><strong>Aceitação.</strong> Ao navegar neste site, você concorda com estes Termos. Caso não concorde, por favor não utilize o site.</li>
+          <li><strong>Conteúdo informativo.</strong> As informações aqui publicadas têm caráter exclusivamente informativo e não constituem consulta jurídica. Para orientação sobre seu caso, é necessária a contratação de um advogado.</li>
+          <li><strong>Relação advogado-cliente.</strong> O acesso ao site e o envio de mensagens pelo formulário de contato não estabelecem relação advogado-cliente. Essa relação só se constitui mediante assinatura de contrato e definição de honorários.</li>
+          <li><strong>Formulário de contato.</strong> As informações enviadas pelo formulário são utilizadas exclusivamente para retorno de contato e tratadas com sigilo profissional, nos termos do Código de Ética.</li>
+          <li><strong>Propriedade intelectual.</strong> Todo o conteúdo deste site é protegido pela legislação brasileira de direitos autorais. É vedada qualquer reprodução sem autorização prévia e por escrito.</li>
+          <li><strong>Responsabilidade.</strong> O escritório não se responsabiliza por decisões tomadas com base no conteúdo deste site sem a devida consulta prévia.</li>
+          <li><strong>Foro.</strong> Fica eleito o Foro da Comarca de Vitória - ES para dirimir quaisquer controvérsias decorrentes do uso deste site.</li>
+        </ol>
+
+        <h2 className="font-[Tenor_Sans] text-black text-[18px] tracking-widest mt-12 mb-6">
+          POLÍTICA DE PRIVACIDADE
+        </h2>
+        <p className="font-[Tenor_Sans] text-black text-[15px] mb-4">
+          Bertolini da Rós Advocacia — OAB/ES 41.885
+        </p>
+
+        <ol className="text-justify font-[Tenor_Sans] text-black text-[15px] leading-relaxed space-y-4 list-decimal list-inside">
+          <li><strong>Responsável pelo dados.</strong> Dr. Lazaro Bertolini da Rós — Rua Alfeu Alves Pereira, 79, Enseada do Suá, Vitória - ES.</li>
+          <li><strong>Dados coletados.</strong> Coletamos apenas os dados informados voluntariamente no formulário de contato: nome, e-mail, telefone e mensagem.</li>
+          <li><strong>Finalidade.</strong> Os dados são utilizados exclusivamente para responder ao seu contato e, em for o caso, para eventual contratação de serviços. Esses dados para envio de publicidade não são usados.</li>
+          <li><strong>Compartilhamento.</strong> Seus dados não são vendidos nem compartilhados com terceiros, salvo por obrigação legal ou determinação judicial.</li>
+          <li><strong>Seus direitos (LGPD).</strong> Você pode a qualquer momento solicitar acesso, correção ou exclusão dos seus dados. Entre em contato pelo e-mail lazarodaros@gmail.com.</li>
+          <li><strong>Contato.</strong> lazarodaros@gmail.com +55 (27) 99794-4606</li>
+        </ol>
+      </section>
+
+      <Footer />
+    </main>
+  );
+}

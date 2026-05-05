@@ -1,0 +1,35 @@
+import Image from "next/image";
+import Link from "next/link";
+
+export default function Footer() {
+  return (
+    <footer>
+      <div className="bg-[#ffffff] px-10 py-12 flex justify-between items-center">
+        <Link href="/">
+          <Image src="/img/bertolini-logo.png" alt="Logo Bertolini Da Rós Advocacia" width={200} height={80}/>
+        </Link>
+
+        <div>
+          <h3 className="font-[Tenor_Sans] text-black text-[18px] tracking-widest mb-4">
+            Endereço
+          </h3>
+          <p className="font-[Tenor_Sans] text-black text-[14px] leading-relaxed max-w-[280px]">
+            Rua Alfeu Alves Pereira, 79, Enseada do Suá, Vitória - ES, Cep 29.050-285.
+          </p>
+        </div>
+      </div>
+
+      <div className="bg-[#53707F] px-20 py-4 flex justify-between items-center">
+        <p className="font-[Tenor_Sans] text-white text-[12px]">
+            Desenvolvido por <a href="https://eduardamagnago.com/" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:font-bold no-underline">EM Studio.</a>
+        </p>
+        <p className="font-[Tenor_Sans] text-white text-[12px]">
+          © Bertolini Da Rós 2026 - Todos os direitos reservados.
+        </p>
+        <a href="/termos" className="font-[Tenor_Sans] text-white text-[12px] hover:font-bold">
+          Termos & Política de Privacidade
+        </a>
+      </div>
+    </footer>
+  );
+}

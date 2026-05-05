@@ -1,0 +1,52 @@
+import Header from "../components/header/Header";
+import Footer from "../components/footer/Footer";
+import Image from "next/image";
+
+export default function Termos() {
+  return (
+    <main className="bg-[#f8f8f8] min-h-screen">
+      <Header />
+
+      <section className="relative px-12 py-18 text-center overflow-hidden mb-10">
+        <div className="absolute z-0 inset-0 flex items-center justify-center opacity-50 pointer-events-none">
+          <Image src="/img/logo-br.png" alt="" width={500} height={500} />
+        </div>
+
+        <h1 className="font-[Lora] text-[48px] font-normal text-[#17445B] mb-6">
+          Nossa História
+        </h1>
+        <p className="font-[Lora] text-[18px] text-[#0A0A0A] max-w-[600px] mx-auto leading-relaxed mb-10">
+          Conheça a trajetória por trás da nossa advocacia. Uma história construída com dedicação, ética e compromisso com a justiça.
+        </p>
+
+        <button className="flex items-center relative z-10  gap-3 font-[Tenor_Sans] text-[16px] text-white bg-[#53707F] rounded-[20px] px-8 py-3 mx-auto cursor-pointer">
+          Especializações
+          <Image src="/img/seta-branco.png" alt="ícone" width={24} height={24} />
+        </button>
+      </section>
+
+      <section className="bg-[#53707F] px-2 py-15 text-center">
+        <h2 className="font-[Tenor_Sans] text-white text-[20px] tracking-widest mb-2">
+          QUEM SOMOS
+        </h2>
+        <p className="font-[Tenor_Sans] text-white text-[14px]">
+          Cada caso é único. Conheça os valores e a visão que guiam nossa atuação no direito penal.
+        </p>
+      </section>
+
+      <section id="missao" className="bg-[#F0F0F0] px-20 py-16 text-center">
+        <h2 className="font-[Tenor_Sans] text-black text-[20px] tracking-widest mb-10">MISSÃO</h2>
+
+        <p className="font-[Tenor_Sans] text-black text-[16px] leading-relaxed max-w-[800px] mb-6 mx-auto text-justify">
+          A Bertolini Da Rós Advocacia tem como missão a prestação de serviços jurídicos criminais com rigor técnico, postura ética e dedicação incansável à causa de cada cliente. O escritório desenvolve uma advocacia criminal interdisciplinar, estabelecendo parcerias estratégicas com profissionais de áreas complementares ao Direito para construir defesas sólidas, fundamentadas e tecnicamente abrangentes.
+        </p>
+
+        <p className="font-[Tenor_Sans] text-black text-[16px] leading-relaxed max-w-[800px] mx-auto text-justify">
+          Pautamos nossa atuação pelo trabalho árduo e pela entrega integral a cada caso. A discrição absoluta no trato das informações e o uso criterioso de tecnologia de ponta garantem ao cliente não apenas uma defesa competente, mas também segurança, transparência e comunicação eficiente em todas as etapas do processo.
+        </p>
+      </section>
+
+    <Footer />
+    </main>
+  );
+}
