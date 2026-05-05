@@ -48,7 +48,7 @@ export default function Home() {
         <Link href="/contato">
           <button className="group flex items-center gap-3 md:gap-4 font-[Tenor_Sans] text-[16px] md:text-[20px] text-[#182443] bg-transparent border border-[#182443] rounded-[25px] px-6 md:px-8 py-3 cursor-pointer transition-all duration-300 hover:bg-[#53707F] hover:border-[#c9c8c8] hover:text-white">
             Entre em contato
-            <Image src="/img/seta-botao.png" alt="ícone" width={32} height={32} className="w-6.5 h-6.5 md:w-8 md:h-8 transition-all duration-300 group-hover:brightness-0 group-hover:invert" />
+            <Image src="/img/seta-botao.png" alt="ícone" width={32} height={32} className="transition-all duration-300 group-hover:invert" />
           </button>
         </Link>
       </section>
