@@ -46,7 +46,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#f8f8f8] from-[0%] via-[#f8f8f8]/60 via-[40%] to-transparent to-[65%]" />
       </div>
 
-      <div className="relative z-10 md:[min-height:100dvh]">
+      <div className="relative z-10 md:[min-height:100dvh] md:pb-24">
         <Header />
 
         <section className="px-6 pt-8 md:px-12 relative z-10">

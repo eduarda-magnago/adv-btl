@@ -35,7 +35,8 @@ export default function Home() {
 
   return (
     <main className="bg-[#f8f8f8] min-h-screen overflow-x-hidden relative">
-      <div className="hidden md:block absolute top-0 right-0 w-[65%] h-[100vh] z-0">
+      <div className="hidden md:block absolute top-0 right-0 w-[65%] z-0"
+     style={{ height: '100dvh' }}
         <Image
           src="/img/praia.png"
           alt="Vitória ES"
@@ -46,7 +47,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#f8f8f8] from-[0%] via-[#f8f8f8]/60 via-[40%] to-transparent to-[65%]" />
       </div>
 
-      <div className="relative z-10 md:[min-height:100dvh]">
+      <div className="relative z-10">
         <Header />
 
         <section className="px-6 pt-8 md:px-12 relative z-10">
@@ -76,7 +77,7 @@ export default function Home() {
 
       <section
         ref={quote.ref as React.RefObject<HTMLElement>}
-        className={`bg-[#53707F] px-10 py-12 md:px-16 md:py-16 lg:px-20 mt-15 md:mt-0
+        className={`bg-[#53707F] px-10 py-12 md:px-16 md:py-16 lg:px-20 mt-10 md:mt-16
           transition-all duration-700 ease-out
           ${quote.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       >

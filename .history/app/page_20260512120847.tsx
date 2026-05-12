@@ -76,7 +76,7 @@ export default function Home() {
 
       <section
         ref={quote.ref as React.RefObject<HTMLElement>}
-        className={`bg-[#53707F] px-10 py-12 md:px-16 md:py-16 lg:px-20 mt-15 md:mt-0
+        className={`bg-[#53707F] px-10 py-12 md:px-16 md:py-16 lg:px-20 mt-15 md:mt-16
           transition-all duration-700 ease-out
           ${quote.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       >
