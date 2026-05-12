@@ -35,7 +35,7 @@ export default function Home() {
 
   return (
     <main className="bg-[#f8f8f8] min-h-screen overflow-x-hidden relative">
-      <div className="hidden md:block absolute top-0 right-0 w-[65%] z-0" style={{ height: '100dvh' }}>
+      <div className="hidden md:block absolute top-0 right-0 w-[65%] z-0" style={{ height: '100dvh', maxHeight: '700px' }}>
         <Image
           src="/img/praia.png"
           alt="Vitória ES"
@@ -46,10 +46,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#f8f8f8] from-[0%] via-[#f8f8f8]/60 via-[40%] to-transparent to-[65%]" />
       </div>
 
-      <div className="relative z-10 md:h-[100dvh] md:flex md:flex-col">
-          <Header />
+      <div className="relative z-10" style={{ maxHeight: '700px' }}>
+        <Header />
 
-        <section className="md:flex-1 md:flex md:flex-col md:justify-center px-6 pt-8 md:px-12 relative z-10 pb-8 md:pb-24">
+        <section className="px-6 pt-8 md:px-12 relative z-10">
           <h1 className="font-[Lora] text-[32px] md:text-[50px] font-normal text-[#17445B] leading-tight max-w-[600px] mb-6 md:mb-8">
             Advocacia criminal com propósito e precisão
           </h1>

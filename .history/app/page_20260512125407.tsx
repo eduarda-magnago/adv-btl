@@ -47,9 +47,9 @@ export default function Home() {
       </div>
 
       <div className="relative z-10 md:h-[100dvh] md:flex md:flex-col">
-          <Header />
+        <Header />
 
-        <section className="md:flex-1 md:flex md:flex-col md:justify-center px-6 pt-8 md:px-12 relative z-10 pb-8 md:pb-24">
+        <section className="md:flex-1 md:flex md:flex-col md:justify-center px-6 pt-100 md:px-12 relative z-10 pb-8 md:pb-24">
           <h1 className="font-[Lora] text-[32px] md:text-[50px] font-normal text-[#17445B] leading-tight max-w-[600px] mb-6 md:mb-8">
             Advocacia criminal com propósito e precisão
           </h1>
