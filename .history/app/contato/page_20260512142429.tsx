@@ -186,7 +186,7 @@ export default function Contato() {
               Defesa estratégica em todo Brasil
             </h3>
             <p className="font-[Tenor_Sans] text-black text-[13px] leading-relaxed">
-              Atuação em todas as instâncias, com foco em resultados e na proteção dos direitos dos nossos clientes, independentemente da localização.
+              Atuação em todo o território nacional.
             </p>
           </div>
         </div>

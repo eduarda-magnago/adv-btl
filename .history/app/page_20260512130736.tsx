@@ -81,7 +81,7 @@ export default function Home() {
           ${quote.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       >
         <p className="font-[Tenor_Sans] text-white text-[14px] md:text-[18px] lg:text-[18px] leading-relaxed max-w-[900px] mx-auto text-center italic">
-          "Não é preciso defender ‘bonito’, é preciso defender ‘útil’." <br />— Evandro Lins e Silva
+          "O fim do Direito não é abolir nem restringir, mas preservar e ampliar a liberdade." <br />— John Locke
         </p>
       </section>
 

@@ -183,10 +183,10 @@ export default function Contato() {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="bg-white/50 backdrop-blur-sm rounded-[20px] px-15 py-8 w-[90%] md:w-[550px] text-center">
             <h3 className="font-[Lora] text-black text-[22px] font-normal mb-4">
-              Defesa estratégica em todo Brasil
+              Defesa estratégrica em todo território nacional
             </h3>
             <p className="font-[Tenor_Sans] text-black text-[13px] leading-relaxed">
-              Atuação em todas as instâncias, com foco em resultados e na proteção dos direitos dos nossos clientes, independentemente da localização.
+              Atuação junto ao TJES, TRT-17ª e Justiça Federal com conhecimento profundo do mercado e da jurisprudência local.
             </p>
           </div>
         </div>
