@@ -58,7 +58,7 @@ export default function Home() {
             técnica e dedicação absoluta à defesa dos nossos clientes.
           </p>
           <div className="w-fit">
-            <Link href="https://wa.me/5527997944606" target="_blank">
+            <Link href="https://wa.me/5527997944606" targ>
               <button className="group flex items-center gap-3 md:gap-4 font-[Tenor_Sans] text-[16px] md:text-[20px] text-[#182443] bg-transparent border border-[#182443] rounded-[25px] px-6 md:px-8 py-3 cursor-pointer transition-all duration-300 hover:bg-[#53707F] hover:border-[#c9c8c8] hover:text-white">
                 Entre em contato
                 <Image
